@@ -1,3 +1,10 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Header */
 header {
     display: flex;
@@ -8,30 +15,78 @@ header {
     color: white;
 }
 
-/* Logo Styles */
-header img {
-    height: 50px; /* Adjusted height to match the one in the HTML */
-    width: 100px; /* Adjusted width to match the one in the HTML */
+header .logo img {
+    height: 60px;
 }
 
-/* Navigation Styles */
-.topnav {
-    text-align: center;
-    flex-grow: 1; /* Ensures the navbar takes up remaining space */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-.topnav a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    margin: 0 15px; /* Adds spacing between the links */
 }
 
-.topnav a:hover {
-    text-decoration: underline; /* Add hover effect */
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-.topnav .active {
-    color: #FFD700; /* You can change the active link color */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a5d3f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-media img {
+    height: 20px;
+    margin: 0 5px;
 }
